@@ -25,12 +25,12 @@ $image = array(
 $face = new FaceDetection($image);
 ```
 
-#### Detecting a face
-```php
-$face->getFaces();
-```
-
 #### Set attributes
 ```php
 $face->setAttributes(['gender', 'age']);
+```
+
+#### Detecting a face
+```php
+$face->getFaces();
 ```

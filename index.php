@@ -6,9 +6,11 @@ use Khrigo\Face\FaceDetection as FaceDetection;
 require_once __DIR__ . '/vendor/autoload.php';
 
 $image = array(
-	'url' => 'https://pp.vk.me/c630423/v630423300/25878/bWcvvvZgGoQ.jpg',
+	'url' => '',
 );
 
 // detect face
 $face = new FaceDetection($image);
-$face->setAttributes(['gender'])->getFaces();
+$result = $face->setAttributes(['gender'])->getFaces();
+
+die(var_dump($result));

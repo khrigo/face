@@ -48,9 +48,9 @@ class FaceDetection
 
 		header("Content-Type: application/json");
 		if (!$response) {
-			echo json_encode(array("statusCode" => "406", "message" => "There was no response from the server."));
+			return array("statusCode" => "406", "message" => "There was no response from the server.");
 		} else {
-			echo $response;
+			return json_decode($response, 1);
 		}
 	}
 

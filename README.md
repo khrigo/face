@@ -1,7 +1,7 @@
 Face Detection
 =======
-A PHP Library for detection face (and age, gender, etc.) on image.
-> Used: [Microsoft's Face API](https://www.projectoxford.ai/doc/face/overview)
+A PHP Library for face detection (and age, gender, etc.) on image.
+> Used: [Microsoft's Face API](https://www.microsoft.com/cognitive-services/en-us/face-api/documentation/overview)
 
 ### Installation ##
 ```bash
@@ -10,10 +10,10 @@ composer install
 
 Add your subscription key in the FaceDetection.php class
 ```php
-    public function __construct($image) {
-        $this->subscriptionKey = '';
-        // ... code
-    }
+public function __construct($image) {
+    $this->subscriptionKey = '';
+    // ... code
+}
 
 ```
 
@@ -27,17 +27,14 @@ $image = array(
 );
 
 $face = new FaceDetection($image);
-?>
 ```
 
 #### Detecting a face
 ```php
 $face->getFaces();
-
 ```
 
 #### Set attributes
 ```php
 $face->setAttributes(['gender', 'age']);
-
 ```

@@ -10,11 +10,7 @@ composer install
 
 Add your subscription key in the FaceDetection.php class
 ```php
-public function __construct($image) {
-    $this->subscriptionKey = '';
-    // ... code
-}
-
+private $subscriptionKey = '';
 ```
 
 ### Usage ##

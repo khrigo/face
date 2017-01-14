@@ -9,7 +9,7 @@
  */
 class FaceDetection
 {
-	private $url;
+	private $url = 'https://api.projectoxford.ai/face/v1.0/detect';
 	private $subscriptionKey = '';
 	private $image;
 
@@ -17,7 +17,6 @@ class FaceDetection
 	 * Constructor
 	 */
 	public function __construct($image = '') {
-		$this->url = 'https://api.projectoxford.ai/face/v1.0/detect';
 		$this->image = $image;
 	}
 
